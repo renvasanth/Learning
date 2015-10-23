@@ -1,6 +1,6 @@
 from sys import argv
 
-argv = script, first, second, third
+script, first, second, third = argv
 
 print "The script is called:", script
 print "Your first variable is :", first
