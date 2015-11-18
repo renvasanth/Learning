@@ -42,4 +42,7 @@ class GreatsmallTestCase(unittest.TestCase):
         self.assertEqual(greater_smaller(l), [3, 3])
     def test_two_answer(self):
         l = [78, 35, 25, 72, 3, 5, 78, 46, 3]
-        self.assertEqual(greater_smaller(l), [78, 3])        
+        self.assertEqual(greater_smaller(l), [78, 3])
+    def test_minus(self):
+        l =  [78, 35, 25, 72, 3, 5, -80, 46, -5]       
+        self.assertEqual(greater_smaller(l), [78, -80])
